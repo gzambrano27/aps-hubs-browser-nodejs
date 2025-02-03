@@ -1,0 +1,113 @@
+/* Estilo del scrollbar */
+::-webkit-scrollbar {
+    width: 5px; /* Prueba con un tamaño más notable */
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: darkgray;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: ArtifaktElement;
+    font-size: 14px;
+}
+
+#header, #sidebar, #preview {
+    position: absolute;
+}
+
+#header {
+    height: 4em;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#sidebar {
+    width: 20%;
+    left: 0;
+    top: 4em;
+    bottom: 0;
+    overflow-y: scroll;
+}
+
+#preview {
+    width: 80%;
+    right: 0;
+    top: 4em;
+    bottom: 0;
+}
+
+#header > * {
+    height: 2em;
+    margin: 0 0.5em;
+}
+
+#login {
+    font-family: ArtifaktElement;
+    font-size: 1em;
+}
+
+#header .title {
+    height: auto;
+    margin-right: auto;
+}
+
+#tree {
+    margin: 0.5em;
+}
+
+@media (max-width: 768px) {
+    #sidebar {
+        width: 100%;
+        top: 3em;
+        bottom: 75%;
+    }
+    #preview {
+        width: 100%;
+        top: 25%;
+        bottom: 0;
+    }
+}
+
+.icon-hub:before {
+    background-image: url(https://www.svgrepo.com/show/29728/app.svg); /* or https://raw.githubusercontent.com/primer/octicons/main/icons/stack-16.svg */
+    background-size: cover;
+}
+
+.icon-project:before {
+    
+    background-image: url(https://www.svgrepo.com/show/392016/marketing-office-project.svg); /* or https://raw.githubusercontent.com/primer/octicons/main/icons/organization-16.svg */
+    background-size: cover;
+}
+
+.icon-my-folder:before {
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/a/a1/Icons8_flat_folder.svg);
+    background-size: cover;
+}
+
+.icon-item:before {
+    background-image: url(https://www.svgrepo.com/show/528250/file-text.svg);
+    background-size: cover;
+}
+
+.icon-version:before {
+    background-image: url(https://www.svgrepo.com/show/373623/git.svg);
+    background-size: cover;
+}
+z
